@@ -1,0 +1,12 @@
+def fileswap():
+    f1 = input('First File Destination: ')
+    f2 = input('Second File Desination: ')
+    openfile1 = open(f1, 'r')
+    openfile2 = open(f2, 'r')
+    data1 = openfile1.read()
+    data2 = openfile2.read()
+    openfile1 = open(f1 , 'w')
+    openfile2 = open(f2 , 'w')
+    openfile1.write(data2)
+    openfile2.write(data1)
+fileswap()
